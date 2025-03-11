@@ -49,7 +49,7 @@ jobs:
         with:
           python-version: '3.10'
       - run: pip install hermes
-      - run: pip install hermes
+      - run: pip install hermes-plugin-python
       - run: hermes harvest
       - run: hermes process
       - run: hermes curate
@@ -94,7 +94,7 @@ jobs:
         with:
           python-version: '3.10'
       - run: pip install hermes
-      - run: pip install hermes
+      - run: pip install hermes-plugin-python
 
       # ADAPT
       # If you want to publish artifacts (e.g., a zipped snapshot of your repository),
