@@ -1,0 +1,47 @@
+1739876020.859446:          hermes.cli:     DEBUG | Running hermes with the following command line arguments: Namespace(subcommand='init', path=PosixPath('.'), config=PosixPath('hermes.toml'), options=[], template_branch='', command=<hermes.commands.init.base.HermesInitCommand object at 0x7d6e05b47f80>)
+1739876020.859645:          hermes.cli:     DEBUG | Loading settings...
+1739876020.859666:          hermes.cli:     DEBUG | Update settings from command line...
+1739876020.859685:          hermes.cli:      INFO | Run subcommand init
+1739876020.872401:         hermes.init:      INFO | Git project using GitHub detected.
+
+1739876020.872507:         hermes.init:      INFO | Starting to initialize HERMES in /home/n.heeb/Desktop/zenodo-test ...
+1739876020.872593:         hermes.init:      INFO | -- Step 1 of 7: Configure deposition platform and setup method --
+1739876020.872673:         hermes.init:      INFO | Where do you want to publish the software?
+1739876023.744111:         hermes.init:      INFO | You selected "Zenodo (Sandbox)".
+
+1739876023.744344:         hermes.init:      INFO | How do you want to connect Zenodo (Sandbox) with your GitHub CI?
+1739876026.720244:         hermes.init:      INFO | You selected "Automatically (using OAuth / Device Flow)".
+
+1739876026.720619:         hermes.init:      INFO | -- Step 2 of 7: Configure HERMES behaviour --
+1739876026.720759:         hermes.init:      INFO | When should the automated HERMES process start?
+1739876027.688927:         hermes.init:      INFO | You selected "When I push the current branch main".
+
+1739876028.568975:         hermes.init:      INFO | Which other folders / files of your root directory should be included in the Zenodo (Sandbox) upload?
+1739876030.120365:         hermes.init:      INFO | You selected "All (non hidden) folders".
+
+1739876030.120586:         hermes.init:      INFO | Your upload will consist of the following:
+1739876030.120648:         hermes.init:      INFO | 	Unzipped:
+1739876030.120852:         hermes.init:      INFO | 		README.md
+1739876030.120998:         hermes.init:      INFO | 	Zipped:
+1739876030.121071:         hermes.init:      INFO | 		src
+1739876030.121141:         hermes.init:      INFO | -- Step 3 of 7: Create hermes.toml file --
+1739876030.121678:         hermes.init:      INFO | `hermes.toml` was created.
+1739876030.121792:         hermes.init:      INFO | -- Step 4 of 7: Create CITATION.cff file --
+1739876030.121853:         hermes.init:      INFO | Your project already contains a `CITATION.cff` file. Nice!
+1739876030.121901:         hermes.init:      INFO | -- Step 5 of 7: Create git CI files --
+1739876030.129417:         hermes.init:      INFO | The `.gitignore` file already contains `.hermes/`
+1739876030.378249:         hermes.init:      INFO | GitHub CI: File was created at .github/workflows/hermes_github.yml
+1739876030.378446:         hermes.init:      INFO | -- Step 6 of 7: Connect with deposition platform --
+1739876030.378545:         hermes.init:      INFO | Doing OAuth with Zenodo is currently not available.
+1739876030.378707:         hermes.init:      INFO | Open this link (https://sandbox.zenodo.org/account/settings/applications/tokens/new/) and create an access token.
+1739876030.378770:         hermes.init:      INFO | It needs the scopes "deposit:actions" and "deposit:write".
+1739876047.419283:         hermes.init:      INFO | The token was validated by Zenodo (Sandbox).
+1739876047.419425:         hermes.init:      INFO | -- Step 7 of 7: Connect with git project --
+1739876047.419493:         hermes.init:      INFO | Using Device-Flow to authorize with GitHub
+1739876047.599309:         hermes.init:      INFO | Open https://github.com/login/device and enter this code: 6544-3B62
+1739876078.748298:         hermes.init:      INFO | OAuth at GitHub was successful.
+1739876079.277657:         hermes.init:      INFO | Secret 'ZENODO_SANDBOX' created/updated successfully.
+1739876079.552191:         hermes.init:      INFO | Project settings updated successfully.
+1739876079.553611:         hermes.init:      INFO | 
+HERMES is now initialized and ready to be used.
+
