@@ -115,3 +115,110 @@ HERMES is now initialized and ready to be used.
 1741695112.864481:          hermes.cli:     DEBUG | Loading settings...
 1741695112.865484:          hermes.cli:     DEBUG | Update settings from command line...
 1741695112.865535:          hermes.cli:      INFO | Run subcommand postprocess
+1741695629.774490:          hermes.cli:     DEBUG | Running hermes with the following command line arguments: Namespace(subcommand='harvest', path=PosixPath('.'), config=PosixPath('hermes.toml'), options=[], command=<hermes.commands.harvest.base.HermesHarvestCommand object at 0x7f3474a210f0>)
+1741695629.774637:          hermes.cli:     DEBUG | Loading settings...
+1741695629.775593:          hermes.cli:     DEBUG | Update settings from command line...
+1741695629.775637:          hermes.cli:      INFO | Run subcommand harvest
+1741695629.844056:           audit.cff:      INFO | - Found valid Citation File Format file at: CITATION.cff
+1741695630.323770:          hermes.cli:     DEBUG | Running hermes with the following command line arguments: Namespace(subcommand='process', path=PosixPath('.'), config=PosixPath('hermes.toml'), options=[], command=<hermes.commands.process.base.HermesProcessCommand object at 0x7f957d63f3d0>)
+1741695630.323931:          hermes.cli:     DEBUG | Loading settings...
+1741695630.324924:          hermes.cli:     DEBUG | Update settings from command line...
+1741695630.324970:          hermes.cli:      INFO | Run subcommand process
+1741695630.325117:      hermes.process:      INFO | ## Process data from toml
+1741695630.325902:   hermes.model.path:     DEBUG | name: 'Key @type not in name.'
+1741695630.326164:   hermes.model.path:     DEBUG | version: 'Key @type not in version.'
+1741695630.326373:   hermes.model.path:     DEBUG | description: 'Key @type not in description.'
+1741695630.326689:   hermes.model.path:     DEBUG | author: 'Key @type not in author.'
+1741695630.326864:   hermes.model.path:     DEBUG | author[0]: 'Key @type not in author[0].'
+1741695630.326901:   hermes.model.path:     DEBUG | author: 'Key @type not in author.'
+1741695630.327099:   hermes.model.path:     DEBUG | author[0].name: 'Key @type not in author[0].name.'
+1741695630.327142:   hermes.model.path:     DEBUG | author[0]: 'Key @type not in author[0].'
+1741695630.327173:   hermes.model.path:     DEBUG | author: 'Key @type not in author.'
+1741695630.327480:   hermes.model.path:     DEBUG | author[0].email: 'Key @type not in author[0].email.'
+1741695630.327517:   hermes.model.path:     DEBUG | author[0]: 'Key @type not in author[0].'
+1741695630.327547:   hermes.model.path:     DEBUG | author: 'Key @type not in author.'
+1741695630.327847:   hermes.model.path:     DEBUG | author[0].@type: 'Key @type not in author[0].@type.'
+1741695630.327883:   hermes.model.path:     DEBUG | author[0]: 'Key @type not in author[0].'
+1741695630.327913:   hermes.model.path:     DEBUG | author: 'Key @type not in author.'
+1741695630.328225:   hermes.model.path:     DEBUG | author[1]: 'Key @type not in author[1].'
+1741695630.328264:   hermes.model.path:     DEBUG | author: 'Key @type not in author.'
+1741695630.328438:   hermes.model.path:     DEBUG | author[1].name: 'Key @type not in author[1].name.'
+1741695630.328474:   hermes.model.path:     DEBUG | author[1]: 'Key @type not in author[1].'
+1741695630.328502:   hermes.model.path:     DEBUG | author: 'Key @type not in author.'
+1741695630.328966:   hermes.model.path:     DEBUG | author[1].email: 'Key @type not in author[1].email.'
+1741695630.329026:   hermes.model.path:     DEBUG | author[1]: 'Key @type not in author[1].'
+1741695630.329058:   hermes.model.path:     DEBUG | author: 'Key @type not in author.'
+1741695630.329344:   hermes.model.path:     DEBUG | author[1].@type: 'Key @type not in author[1].@type.'
+1741695630.329380:   hermes.model.path:     DEBUG | author[1]: 'Key @type not in author[1].'
+1741695630.329410:   hermes.model.path:     DEBUG | author: 'Key @type not in author.'
+1741695630.329687:   hermes.model.path:     DEBUG | author[2]: 'Key @type not in author[2].'
+1741695630.329721:   hermes.model.path:     DEBUG | author: 'Key @type not in author.'
+1741695630.329891:   hermes.model.path:     DEBUG | author[2].name: 'Key @type not in author[2].name.'
+1741695630.329927:   hermes.model.path:     DEBUG | author[2]: 'Key @type not in author[2].'
+1741695630.329954:   hermes.model.path:     DEBUG | author: 'Key @type not in author.'
+1741695630.330251:   hermes.model.path:     DEBUG | author[2].email: 'Key @type not in author[2].email.'
+1741695630.330302:   hermes.model.path:     DEBUG | author[2]: 'Key @type not in author[2].'
+1741695630.330341:   hermes.model.path:     DEBUG | author: 'Key @type not in author.'
+1741695630.330624:   hermes.model.path:     DEBUG | author[2].@type: 'Key @type not in author[2].@type.'
+1741695630.330661:   hermes.model.path:     DEBUG | author[2]: 'Key @type not in author[2].'
+1741695630.330689:   hermes.model.path:     DEBUG | author: 'Key @type not in author.'
+1741695630.330986:   hermes.model.path:     DEBUG | author[3]: 'Key @type not in author[3].'
+1741695630.331026:   hermes.model.path:     DEBUG | author: 'Key @type not in author.'
+1741695630.331192:   hermes.model.path:     DEBUG | author[3].name: 'Key @type not in author[3].name.'
+1741695630.331227:   hermes.model.path:     DEBUG | author[3]: 'Key @type not in author[3].'
+1741695630.331255:   hermes.model.path:     DEBUG | author: 'Key @type not in author.'
+1741695630.331547:   hermes.model.path:     DEBUG | author[3].email: 'Key @type not in author[3].email.'
+1741695630.331584:   hermes.model.path:     DEBUG | author[3]: 'Key @type not in author[3].'
+1741695630.331612:   hermes.model.path:     DEBUG | author: 'Key @type not in author.'
+1741695630.331903:   hermes.model.path:     DEBUG | author[3].@type: 'Key @type not in author[3].@type.'
+1741695630.331939:   hermes.model.path:     DEBUG | author[3]: 'Key @type not in author[3].'
+1741695630.331968:   hermes.model.path:     DEBUG | author: 'Key @type not in author.'
+1741695630.332279:   hermes.model.path:     DEBUG | author[4]: 'Key @type not in author[4].'
+1741695630.332314:   hermes.model.path:     DEBUG | author: 'Key @type not in author.'
+1741695630.332485:   hermes.model.path:     DEBUG | author[4].name: 'Key @type not in author[4].name.'
+1741695630.332520:   hermes.model.path:     DEBUG | author[4]: 'Key @type not in author[4].'
+1741695630.332548:   hermes.model.path:     DEBUG | author: 'Key @type not in author.'
+1741695630.332839:   hermes.model.path:     DEBUG | author[4].email: 'Key @type not in author[4].email.'
+1741695630.332877:   hermes.model.path:     DEBUG | author[4]: 'Key @type not in author[4].'
+1741695630.332906:   hermes.model.path:     DEBUG | author: 'Key @type not in author.'
+1741695630.333332:   hermes.model.path:     DEBUG | author[4].@type: 'Key @type not in author[4].@type.'
+1741695630.333374:   hermes.model.path:     DEBUG | author[4]: 'Key @type not in author[4].'
+1741695630.333404:   hermes.model.path:     DEBUG | author: 'Key @type not in author.'
+1741695630.333685:   hermes.model.path:     DEBUG | author[5]: 'Key @type not in author[5].'
+1741695630.333719:   hermes.model.path:     DEBUG | author: 'Key @type not in author.'
+1741695630.333881:   hermes.model.path:     DEBUG | author[5].name: 'Key @type not in author[5].name.'
+1741695630.333917:   hermes.model.path:     DEBUG | author[5]: 'Key @type not in author[5].'
+1741695630.333947:   hermes.model.path:     DEBUG | author: 'Key @type not in author.'
+1741695630.334246:   hermes.model.path:     DEBUG | author[5].email: 'Key @type not in author[5].email.'
+1741695630.334287:   hermes.model.path:     DEBUG | author[5]: 'Key @type not in author[5].'
+1741695630.334317:   hermes.model.path:     DEBUG | author: 'Key @type not in author.'
+1741695630.334590:   hermes.model.path:     DEBUG | author[5].@type: 'Key @type not in author[5].@type.'
+1741695630.334626:   hermes.model.path:     DEBUG | author[5]: 'Key @type not in author[5].'
+1741695630.334656:   hermes.model.path:     DEBUG | author: 'Key @type not in author.'
+1741695630.334875:   hermes.model.path:     DEBUG | url: 'Key @type not in url.'
+1741695630.335067:   hermes.model.path:     DEBUG | codeRepository: 'Key @type not in codeRepository.'
+1741695630.335272:   hermes.model.path:     DEBUG | keywords: 'Key @type not in keywords.'
+1741695630.335412:   hermes.model.path:     DEBUG | keywords[0]: 'Key @type not in keywords[0].'
+1741695630.335444:   hermes.model.path:     DEBUG | keywords: 'Key @type not in keywords.'
+1741695630.335671:   hermes.model.path:     DEBUG | keywords[1]: 'Key @type not in keywords[1].'
+1741695630.335711:   hermes.model.path:     DEBUG | keywords: 'Key @type not in keywords.'
+1741695630.335941:   hermes.model.path:     DEBUG | keywords[2]: 'Key @type not in keywords[2].'
+1741695630.335988:   hermes.model.path:     DEBUG | keywords: 'Key @type not in keywords.'
+1741695630.336161:      hermes.process:      INFO | ## Process data from cff
+1741695630.336498:   hermes.model.path:     DEBUG | @context: 'Key @type not in @context.'
+1741695630.336695:   hermes.model.path:     DEBUG | @type: 'Key @type not in @type.'
+1741695630.336940:   hermes.model.path:     DEBUG | Using type SoftwareSourceCode from author[0].@type.
+1741695630.337384:   hermes.model.path:     DEBUG | Using type SoftwareSourceCode from author[0].familyName.
+1741695630.337677:   hermes.model.path:     DEBUG | Using type SoftwareSourceCode from author[0].givenName.
+1741695630.337958:   hermes.model.path:     DEBUG | Using type SoftwareSourceCode from author[0].email.
+1741695630.338213:   hermes.model.path:     DEBUG | Using type SoftwareSourceCode from description.
+1741695630.338419:   hermes.model.path:     DEBUG | Using type SoftwareSourceCode from keywords[0].
+1741695630.338625:   hermes.model.path:     DEBUG | Using type SoftwareSourceCode from license.
+1741695630.338798:   hermes.model.path:     DEBUG | Using type SoftwareSourceCode from name.
+1741695630.339342:   hermes.model.path:     DEBUG | Using type SoftwareSourceCode from @context.
+1741695630.339514:   hermes.model.path:     DEBUG | Using type SoftwareSourceCode from @type.
+1741695630.813550:          hermes.cli:     DEBUG | Running hermes with the following command line arguments: Namespace(subcommand='curate', path=PosixPath('.'), config=PosixPath('hermes.toml'), options=[], command=<hermes.commands.curate.base.HermesCurateCommand object at 0x7f10ff4986d0>)
+1741695630.813717:          hermes.cli:     DEBUG | Loading settings...
+1741695630.814710:          hermes.cli:     DEBUG | Update settings from command line...
+1741695630.814757:          hermes.cli:      INFO | Run subcommand curate
+1741695630.814844:       hermes.curate:      INFO | # Metadata curation

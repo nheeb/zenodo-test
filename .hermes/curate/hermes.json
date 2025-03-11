@@ -1,0 +1,54 @@
+{
+  "name": "Fruitsalad-Recipe 2",
+  "version": "0.10.0.dev0",
+  "description": "Contains instructions on how to make a nice fruit salad.",
+  "author": [
+    {
+      "name": "Oliver Bertuch",
+      "email": "n.heeb@fz-juelich.de",
+      "@type": "Person",
+      "familyName": "Heeb",
+      "givenName": "Nitai"
+    },
+    {
+      "name": "Stephan Druskat",
+      "email": "stephan.druskat@dlr.de",
+      "@type": "Person"
+    },
+    {
+      "name": "Nitai Heeb",
+      "email": "n.heeb@fz-juelich.de",
+      "@type": "Person"
+    },
+    {
+      "name": "Sophie Kernchen",
+      "email": "sohpie.kernchen@dlr.de",
+      "@type": "Person"
+    },
+    {
+      "name": "Michael Meinel",
+      "email": "michael.meinel@dlr.de",
+      "@type": "Person"
+    },
+    {
+      "name": "David Pape",
+      "email": "d.pape@hzdr.de",
+      "@type": "Person"
+    }
+  ],
+  "url": "https://software-metadata.pub",
+  "codeRepository": "https://github.com/softwarepub/hermes",
+  "keywords": [
+    "Fruit",
+    "metadata",
+    "automation"
+  ],
+  "@context": [
+    "https://doi.org/10.5063/schema/codemeta-2.0",
+    {
+      "hermes": "https://software-metadata.pub/ns/hermes/"
+    }
+  ],
+  "@type": "SoftwareSourceCode",
+  "license": "https://spdx.org/licenses/CC0-1.0"
+}
