@@ -1,0 +1,54 @@
+{
+  "@context": [
+    "https://doi.org/10.5063/schema/codemeta-2.0",
+    {
+      "hermes": "https://software-metadata.pub/ns/hermes/"
+    }
+  ],
+  "@type": "SoftwareSourceCode",
+  "author": [
+    {
+      "@type": "Person",
+      "familyName": "Heeb",
+      "givenName": "Nitai",
+      "email": "o.bertuch@fz-juelich.de",
+      "name": "Oliver Bertuch"
+    },
+    {
+      "name": "Stephan Druskat",
+      "email": "stephan.druskat@dlr.de",
+      "@type": "Person"
+    },
+    {
+      "name": "Nitai Heeb",
+      "email": "n.heeb@fz-juelich.de",
+      "@type": "Person"
+    },
+    {
+      "name": "Sophie Kernchen",
+      "email": "sohpie.kernchen@dlr.de",
+      "@type": "Person"
+    },
+    {
+      "name": "Michael Meinel",
+      "email": "michael.meinel@dlr.de",
+      "@type": "Person"
+    },
+    {
+      "name": "David Pape",
+      "email": "d.pape@hzdr.de",
+      "@type": "Person"
+    }
+  ],
+  "description": "Workflow to publish research software with rich metadata",
+  "keywords": [
+    "publishing",
+    "metadata",
+    "automation"
+  ],
+  "license": "https://spdx.org/licenses/CC0-1.0",
+  "name": "hermes",
+  "version": "0.10.0.dev0",
+  "url": "https://software-metadata.pub",
+  "codeRepository": "https://github.com/softwarepub/hermes"
+}
