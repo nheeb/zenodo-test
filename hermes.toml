@@ -1,5 +1,5 @@
 [harvest]
-sources = [ "cff", "toml"]
+sources = ["toml", "cff"]
 
 [deposit]
 target = "invenio_rdm"
