@@ -1,47 +1,315 @@
-1739876020.859446:          hermes.cli:     DEBUG | Running hermes with the following command line arguments: Namespace(subcommand='init', path=PosixPath('.'), config=PosixPath('hermes.toml'), options=[], template_branch='', command=<hermes.commands.init.base.HermesInitCommand object at 0x7d6e05b47f80>)
-1739876020.859645:          hermes.cli:     DEBUG | Loading settings...
-1739876020.859666:          hermes.cli:     DEBUG | Update settings from command line...
-1739876020.859685:          hermes.cli:      INFO | Run subcommand init
-1739876020.872401:         hermes.init:      INFO | Git project using GitHub detected.
+1767958459.263517:          hermes.cli:     DEBUG | Running hermes with the following command line arguments: Namespace(subcommand='init', path=PosixPath('.'), config=PosixPath('hermes.toml'), options=[], template_branch='', hermes_branch='', command=<hermes.commands.init.base.HermesInitCommand object at 0x78b659911250>)
+1767958459.263656:          hermes.cli:     DEBUG | Loading settings...
+1767958459.263676:          hermes.cli:     DEBUG | Update settings from command line...
+1767958459.263690:          hermes.cli:      INFO | Run subcommand init
+1767958459.418328:         hermes.init:      INFO | Your version of HERMES (0.10.0.dev0) is up to date.
+1767958459.418492:         hermes.init:      INFO | Preparing HERMES initialization
 
-1739876020.872507:         hermes.init:      INFO | Starting to initialize HERMES in /home/n.heeb/Desktop/zenodo-test ...
-1739876020.872593:         hermes.init:      INFO | -- Step 1 of 7: Configure deposition platform and setup method --
-1739876020.872673:         hermes.init:      INFO | Where do you want to publish the software?
-1739876023.744111:         hermes.init:      INFO | You selected "Zenodo (Sandbox)".
+1767958459.432864:         hermes.init:      INFO | Your git project has multiple remotes. For which remote do you want to setup HERMES?
+1767958488.805728:         hermes.init:      INFO | You selected "origin (https://github.com/nheeb/zenodo-test)".
 
-1739876023.744344:         hermes.init:      INFO | How do you want to connect Zenodo (Sandbox) with your GitHub CI?
-1739876026.720244:         hermes.init:      INFO | You selected "Automatically (using OAuth / Device Flow)".
+1767958488.811608:         hermes.init:      INFO | Git project using GitHub detected.
 
-1739876026.720619:         hermes.init:      INFO | -- Step 2 of 7: Configure HERMES behaviour --
-1739876026.720759:         hermes.init:      INFO | When should the automated HERMES process start?
-1739876027.688927:         hermes.init:      INFO | You selected "When I push the current branch main".
+1767958488.811759:         hermes.init:      INFO | Starting to initialize HERMES in /home/n.heeb/Desktop/zenodo-test
 
-1739876028.568975:         hermes.init:      INFO | Which other folders / files of your root directory should be included in the Zenodo (Sandbox) upload?
-1739876030.120365:         hermes.init:      INFO | You selected "All (non hidden) folders".
+1767958488.811816:         hermes.init:      INFO | -- Step 1 of 8: Configure HERMES plugins --
+1767958490.116694:         hermes.init:      INFO | The following plugins are already builtin:
+1767958490.116861:         hermes.init:      INFO | [harvest] [1mCITATION.cff Harvester[0m (builtin)
+1767958490.116925:         hermes.init:      INFO | [harvest] [1mcodemeta.json Harvester[0m (builtin)
+1767958490.116970:         hermes.init:      INFO | [harvest] [1m'file_exists' Harvester[0m (builtin)
+1767958490.117008:         hermes.init:      INFO | [process] [1mMerge[0m (builtin)
+1767958490.117044:         hermes.init:      INFO | [curate] [1mCurate[0m (builtin)
+1767958490.117078:         hermes.init:      INFO | [deposit] [1mInvenio Deposit[0m (builtin)
+1767958490.117110:         hermes.init:      INFO | [deposit] [1mInvenio RDM Deposit[0m (builtin)
+1767958490.117141:         hermes.init:      INFO | [deposit] [1mRodare Deposit[0m (builtin)
+1767958490.117174:         hermes.init:      INFO | [postprocess] [1mInvenio Postprocess[0m (builtin)
+1767958490.117206:         hermes.init:      INFO | [postprocess] [1mInvenio RDM Postprocess[0m (builtin)
+1767958490.117245:         hermes.init:      INFO | The following plugins are available for installation:
+1767958490.117347:         hermes.init:      INFO | Do you want to add a plugin?
+1767958500.676759:         hermes.init:      INFO | You selected "Add hermes-plugin-python".
 
-1739876030.120586:         hermes.init:      INFO | Your upload will consist of the following:
-1739876030.120648:         hermes.init:      INFO | 	Unzipped:
-1739876030.120852:         hermes.init:      INFO | 		README.md
-1739876030.120998:         hermes.init:      INFO | 	Zipped:
-1739876030.121071:         hermes.init:      INFO | 		src
-1739876030.121141:         hermes.init:      INFO | -- Step 3 of 7: Create hermes.toml file --
-1739876030.121678:         hermes.init:      INFO | `hermes.toml` was created.
-1739876030.121792:         hermes.init:      INFO | -- Step 4 of 7: Create CITATION.cff file --
-1739876030.121853:         hermes.init:      INFO | Your project already contains a `CITATION.cff` file. Nice!
-1739876030.121901:         hermes.init:      INFO | -- Step 5 of 7: Create git CI files --
-1739876030.129417:         hermes.init:      INFO | The `.gitignore` file already contains `.hermes/`
-1739876030.378249:         hermes.init:      INFO | GitHub CI: File was created at .github/workflows/hermes_github.yml
-1739876030.378446:         hermes.init:      INFO | -- Step 6 of 7: Connect with deposition platform --
-1739876030.378545:         hermes.init:      INFO | Doing OAuth with Zenodo is currently not available.
-1739876030.378707:         hermes.init:      INFO | Open this link (https://sandbox.zenodo.org/account/settings/applications/tokens/new/) and create an access token.
-1739876030.378770:         hermes.init:      INFO | It needs the scopes "deposit:actions" and "deposit:write".
-1739876047.419283:         hermes.init:      INFO | The token was validated by Zenodo (Sandbox).
-1739876047.419425:         hermes.init:      INFO | -- Step 7 of 7: Connect with git project --
-1739876047.419493:         hermes.init:      INFO | Using Device-Flow to authorize with GitHub
-1739876047.599309:         hermes.init:      INFO | Open https://github.com/login/device and enter this code: 6544-3B62
-1739876078.748298:         hermes.init:      INFO | OAuth at GitHub was successful.
-1739876079.277657:         hermes.init:      INFO | Secret 'ZENODO_SANDBOX' created/updated successfully.
-1739876079.552191:         hermes.init:      INFO | Project settings updated successfully.
-1739876079.553611:         hermes.init:      INFO | 
-HERMES is now initialized and ready to be used.
+1767958500.676938:         hermes.init:      INFO | The following plugins are going to be installed:
+1767958500.677006:         hermes.init:      INFO | [harvest] [1mhermes-plugin-python[0m (https://github.com/softwarepub/hermes-plugin-python)
+1767958500.677063:         hermes.init:      INFO | The following plugins are available for installation:
+1767958500.677140:         hermes.init:      INFO | Do you want to add a plugin?
+1767958504.933013:         hermes.init:      INFO | You selected "No further plugins needed".
+
+1767958504.933253:         hermes.init:      INFO | -- Step 2 of 8: Configure deposition platform and setup method --
+1767958504.933355:         hermes.init:      INFO | Where do you want to publish the software?
+1767958507.268308:         hermes.init:      INFO | You selected "Zenodo Sandbox".
+
+1767958507.268569:         hermes.init:      INFO | Select an access right for your publication
+1767958514.309489:         hermes.init:      INFO | You selected "open".
+
+1767958514.309684:         hermes.init:      INFO | How do you want to connect Zenodo Sandbox with your GitHub CI?
+1767958526.205292:         hermes.init:      INFO | You selected "Automatically (using OAuth / Device Flow)".
+
+1767958526.205496:         hermes.init:      INFO | -- Step 3 of 8: Configure HERMES behaviour --
+1767958526.205560:         hermes.init:      INFO | When should the automated HERMES process start?
+1767958541.061259:         hermes.init:      INFO | You selected "When I push any tag".
+
+1767958541.061496:         hermes.init:      INFO | The HERMES pipeline will be activated when you push a tag.
+1767958546.597742:         hermes.init:      INFO | Y
+
+1767958546.597935:         hermes.init:      INFO | Which other folders / files of your root directory should be included in the Zenodo Sandbox upload?
+1767958555.188238:         hermes.init:      INFO | You selected "Only src/*".
+
+1767958555.188420:         hermes.init:      INFO | Your upload will consist of the following:
+1767958555.188694:         hermes.init:      INFO | 	Unzipped:
+1767958555.188801:         hermes.init:      INFO | 		README.md
+1767958555.188846:         hermes.init:      INFO | 	Zipped:
+1767958555.188922:         hermes.init:      INFO | 		src
+1767958558.812745:         hermes.init:      INFO | Your selection was cleared. Now you can select the files again.
+1767958563.292668:         hermes.init:      INFO | Y
+
+1767958563.292819:         hermes.init:      INFO | Which other folders / files of your root directory should be included in the Zenodo Sandbox upload?
+1767958568.651958:         hermes.init:      INFO | You selected "Enter a custom list of paths".
+
+1767958573.252414:         hermes.init:      INFO | Your upload will consist of the following:
+1767958573.252608:         hermes.init:      INFO | 	Unzipped:
+1767958573.252680:         hermes.init:      INFO | 		README.md
+1767958573.252735:         hermes.init:      INFO | 	Zipped:
+1767958573.252790:         hermes.init:      INFO | 		-
+1767958576.172593:         hermes.init:      INFO | Your selection was cleared. Now you can select the files again.
+1767958577.347972:         hermes.init:      INFO | Y
+
+1767958577.348189:         hermes.init:      INFO | Which other folders / files of your root directory should be included in the Zenodo Sandbox upload?
+1767958579.276608:         hermes.init:      INFO | You selected "Enter a custom list of paths".
+
+1767958604.901628:         hermes.init:     ERROR | src/* does not exist.
+1767958608.571632:         hermes.init:      INFO | src has been added.
+1767958610.516878:         hermes.init:      INFO | Your upload will consist of the following:
+1767958610.517137:         hermes.init:      INFO | 	Unzipped:
+1767958610.517238:         hermes.init:      INFO | 		README.md
+1767958610.517291:         hermes.init:      INFO | 	Zipped:
+1767958610.517332:         hermes.init:      INFO | 		src
+1767958625.388998:         hermes.init:      INFO | Y
+
+1767958625.389176:         hermes.init:      INFO | You can change the selected files later inside the CI file or by running 'hermes init' again.
+1767958625.389251:         hermes.init:      INFO | -- Step 4 of 8: Create hermes.toml file --
+1767958625.390360:         hermes.init:      INFO | `hermes.toml` was created.
+1767958625.390494:         hermes.init:      INFO | -- Step 5 of 8: Create CITATION.cff file --
+1767958625.390542:         hermes.init:      INFO | Your project already contains a `CITATION.cff` file. Nice!
+1767958625.390583:         hermes.init:      INFO | -- Step 6 of 8: Create git CI files --
+1767958625.390748:         hermes.init:      INFO | A new `.gitignore` file was created.
+1767958625.391000:         hermes.init:      INFO | Added `.hermes/` to the `.gitignore` file.
+1767958625.666439:         hermes.init:     ERROR | An error occurred during execution of HERMES init: 'PosixPath' object has no attribute 'split'
+1767958625.669801:         hermes.init:      INFO | Cleaning unused files...
+1767958625.670091:         hermes.init:      INFO | No changes were made. You will have to run 'hermes init' again.
+1767958878.056094:          hermes.cli:     DEBUG | Running hermes with the following command line arguments: Namespace(subcommand='init', path=PosixPath('.'), config=PosixPath('hermes.toml'), options=[], template_branch='', hermes_branch='', command=<hermes.commands.init.base.HermesInitCommand object at 0x72489979f380>)
+1767958878.056307:          hermes.cli:     DEBUG | Loading settings...
+1767958878.056332:          hermes.cli:     DEBUG | Update settings from command line...
+1767958878.056358:          hermes.cli:      INFO | Run subcommand init
+1767958878.113538:         hermes.init:      INFO | Your version of HERMES (0.10.0.dev0) is up to date.
+1767958878.113684:         hermes.init:      INFO | Preparing HERMES initialization
+
+1767958878.125156:         hermes.init:      INFO | Your git project has multiple remotes. For which remote do you want to setup HERMES?
+1767958879.268547:         hermes.init:      INFO | You selected "origin (https://github.com/nheeb/zenodo-test)".
+
+1767958879.274859:         hermes.init:      INFO | Git project using GitHub detected.
+
+1767958879.275028:         hermes.init:      INFO | Starting to initialize HERMES in /home/n.heeb/Desktop/zenodo-test
+
+1767958879.275078:         hermes.init:      INFO | -- Step 1 of 8: Configure HERMES plugins --
+1767958879.932416:         hermes.init:      INFO | The following plugins are already builtin:
+1767958879.932602:         hermes.init:      INFO | [harvest] [1mCITATION.cff Harvester[0m (builtin)
+1767958879.932673:         hermes.init:      INFO | [harvest] [1mcodemeta.json Harvester[0m (builtin)
+1767958879.932728:         hermes.init:      INFO | [harvest] [1m'file_exists' Harvester[0m (builtin)
+1767958879.932799:         hermes.init:      INFO | [process] [1mMerge[0m (builtin)
+1767958879.932839:         hermes.init:      INFO | [curate] [1mCurate[0m (builtin)
+1767958879.932876:         hermes.init:      INFO | [deposit] [1mInvenio Deposit[0m (builtin)
+1767958879.932912:         hermes.init:      INFO | [deposit] [1mInvenio RDM Deposit[0m (builtin)
+1767958879.932949:         hermes.init:      INFO | [deposit] [1mRodare Deposit[0m (builtin)
+1767958879.932984:         hermes.init:      INFO | [postprocess] [1mInvenio Postprocess[0m (builtin)
+1767958879.933017:         hermes.init:      INFO | [postprocess] [1mInvenio RDM Postprocess[0m (builtin)
+1767958879.933067:         hermes.init:      INFO | The following plugins are available for installation:
+1767958879.933174:         hermes.init:      INFO | Do you want to add a plugin?
+1767958881.060027:         hermes.init:      INFO | You selected "No further plugins needed".
+
+1767958881.060197:         hermes.init:      INFO | -- Step 2 of 8: Configure deposition platform and setup method --
+1767958881.060256:         hermes.init:      INFO | Where do you want to publish the software?
+1767958882.077110:         hermes.init:      INFO | You selected "Zenodo Sandbox".
+
+1767958882.077353:         hermes.init:      INFO | Select an access right for your publication
+1767958882.980744:         hermes.init:      INFO | You selected "open".
+
+1767958882.980999:         hermes.init:      INFO | How do you want to connect Zenodo Sandbox with your GitHub CI?
+1767958883.852305:         hermes.init:      INFO | You selected "Automatically (using OAuth / Device Flow)".
+
+1767958883.852586:         hermes.init:      INFO | -- Step 3 of 8: Configure HERMES behaviour --
+1767958883.882071:         hermes.init:      INFO | When should the automated HERMES process start?
+1767958887.092742:         hermes.init:      INFO | You selected "When I push any tag".
+
+1767958887.092957:         hermes.init:      INFO | The HERMES pipeline will be activated when you push a tag.
+1767958889.548813:         hermes.init:      INFO | Y
+
+1767958889.549045:         hermes.init:      INFO | Which other folders / files of your root directory should be included in the Zenodo Sandbox upload?
+1767958891.197054:         hermes.init:      INFO | You selected "Only src/*".
+
+1767958891.197287:         hermes.init:      INFO | Your upload will consist of the following:
+1767958891.197360:         hermes.init:      INFO | 	Unzipped:
+1767958891.197417:         hermes.init:      INFO | 		README.md
+1767958891.197490:         hermes.init:      INFO | 	Zipped:
+1767958891.197549:         hermes.init:      INFO | 		src
+1767958892.172441:         hermes.init:      INFO | Y
+
+1767958892.172675:         hermes.init:      INFO | You can change the selected files later inside the CI file or by running 'hermes init' again.
+1767958892.172783:         hermes.init:      INFO | -- Step 4 of 8: Create hermes.toml file --
+1767958892.174165:         hermes.init:      INFO | `hermes.toml` was created.
+1767958892.174296:         hermes.init:      INFO | -- Step 5 of 8: Create CITATION.cff file --
+1767958892.174363:         hermes.init:      INFO | Your project already contains a `CITATION.cff` file. Nice!
+1767958892.174429:         hermes.init:      INFO | -- Step 6 of 8: Create git CI files --
+1767958892.174698:         hermes.init:      INFO | A new `.gitignore` file was created.
+1767958892.175197:         hermes.init:      INFO | Added `.hermes/` to the `.gitignore` file.
+1767958892.236580:         hermes.init:     ERROR | An error occurred during execution of HERMES init: 'PosixPath' object has no attribute 'split'
+1767958892.237960:         hermes.init:      INFO | Cleaning unused files...
+1767958892.238130:         hermes.init:      INFO | No changes were made. You will have to run 'hermes init' again.
+1767959000.420949:          hermes.cli:     DEBUG | Running hermes with the following command line arguments: Namespace(subcommand='init', path=PosixPath('.'), config=PosixPath('hermes.toml'), options=[], template_branch='', hermes_branch='', command=<hermes.commands.init.base.HermesInitCommand object at 0x75e6420e13d0>)
+1767959000.421161:          hermes.cli:     DEBUG | Loading settings...
+1767959000.421183:          hermes.cli:     DEBUG | Update settings from command line...
+1767959000.421198:          hermes.cli:      INFO | Run subcommand init
+1767959000.474435:         hermes.init:      INFO | Your version of HERMES (0.10.0.dev0) is up to date.
+1767959000.474532:         hermes.init:      INFO | Preparing HERMES initialization
+
+1767959000.487108:         hermes.init:      INFO | Your git project has multiple remotes. For which remote do you want to setup HERMES?
+1767959001.259527:         hermes.init:      INFO | You selected "origin (https://github.com/nheeb/zenodo-test)".
+
+1767959001.264996:         hermes.init:      INFO | Git project using GitHub detected.
+
+1767959001.265175:         hermes.init:      INFO | Starting to initialize HERMES in /home/n.heeb/Desktop/zenodo-test
+
+1767959001.265229:         hermes.init:      INFO | -- Step 1 of 8: Configure HERMES plugins --
+1767959001.567996:         hermes.init:      INFO | The following plugins are already builtin:
+1767959001.568164:         hermes.init:      INFO | [harvest] [1mCITATION.cff Harvester[0m (builtin)
+1767959001.568228:         hermes.init:      INFO | [harvest] [1mcodemeta.json Harvester[0m (builtin)
+1767959001.568278:         hermes.init:      INFO | [harvest] [1m'file_exists' Harvester[0m (builtin)
+1767959001.568319:         hermes.init:      INFO | [process] [1mMerge[0m (builtin)
+1767959001.568366:         hermes.init:      INFO | [curate] [1mCurate[0m (builtin)
+1767959001.568410:         hermes.init:      INFO | [deposit] [1mInvenio Deposit[0m (builtin)
+1767959001.568446:         hermes.init:      INFO | [deposit] [1mInvenio RDM Deposit[0m (builtin)
+1767959001.568489:         hermes.init:      INFO | [deposit] [1mRodare Deposit[0m (builtin)
+1767959001.568522:         hermes.init:      INFO | [postprocess] [1mInvenio Postprocess[0m (builtin)
+1767959001.568555:         hermes.init:      INFO | [postprocess] [1mInvenio RDM Postprocess[0m (builtin)
+1767959001.568593:         hermes.init:      INFO | The following plugins are available for installation:
+1767959001.568689:         hermes.init:      INFO | Do you want to add a plugin?
+1767959001.963993:         hermes.init:      INFO | You selected "No further plugins needed".
+
+1767959001.964287:         hermes.init:      INFO | -- Step 2 of 8: Configure deposition platform and setup method --
+1767959001.964401:         hermes.init:      INFO | Where do you want to publish the software?
+1767959002.796819:         hermes.init:      INFO | You selected "Zenodo Sandbox".
+
+1767959002.797032:         hermes.init:      INFO | Select an access right for your publication
+1767959003.538743:         hermes.init:      INFO | You selected "open".
+
+1767959003.538967:         hermes.init:      INFO | How do you want to connect Zenodo Sandbox with your GitHub CI?
+1767959004.492071:         hermes.init:      INFO | You selected "Automatically (using OAuth / Device Flow)".
+
+1767959004.492316:         hermes.init:      INFO | -- Step 3 of 8: Configure HERMES behaviour --
+1767959004.492403:         hermes.init:      INFO | When should the automated HERMES process start?
+1767959005.468998:         hermes.init:      INFO | You selected "When I push on target branch".
+
+1767959007.315786:         hermes.init:      INFO | The HERMES pipeline will be activated when you push on [1mxfdg[0m.
+1767959008.373254:         hermes.init:      INFO | Y
+
+1767959008.373770:         hermes.init:      INFO | Which other folders / files of your root directory should be included in the Zenodo Sandbox upload?
+1767959009.884662:         hermes.init:      INFO | You selected "Nothing else".
+
+1767959009.884862:         hermes.init:      INFO | Your upload will consist of the following:
+1767959009.884926:         hermes.init:      INFO | 	Unzipped:
+1767959009.884971:         hermes.init:      INFO | 		README.md
+1767959009.885012:         hermes.init:      INFO | 	Zipped:
+1767959009.885050:         hermes.init:      INFO | 		-
+1767959010.749346:         hermes.init:      INFO | Y
+
+1767959010.749554:         hermes.init:      INFO | You can change the selected files later inside the CI file or by running 'hermes init' again.
+1767959010.749640:         hermes.init:      INFO | -- Step 4 of 8: Create hermes.toml file --
+1767959010.750592:         hermes.init:      INFO | `hermes.toml` was created.
+1767959010.750647:         hermes.init:      INFO | -- Step 5 of 8: Create CITATION.cff file --
+1767959010.750678:         hermes.init:      INFO | Your project already contains a `CITATION.cff` file. Nice!
+1767959010.750705:         hermes.init:      INFO | -- Step 6 of 8: Create git CI files --
+1767959010.750830:         hermes.init:      INFO | A new `.gitignore` file was created.
+1767959010.751070:         hermes.init:      INFO | Added `.hermes/` to the `.gitignore` file.
+1767959010.996982:         hermes.init:     ERROR | An error occurred during execution of HERMES init: 'PosixPath' object has no attribute 'split'
+1767959010.999541:         hermes.init:      INFO | Cleaning unused files...
+1767959010.999813:         hermes.init:      INFO | No changes were made. You will have to run 'hermes init' again.
+1767959362.711182:          hermes.cli:     DEBUG | Running hermes with the following command line arguments: Namespace(subcommand='init', path=PosixPath('.'), config=PosixPath('hermes.toml'), options=[], template_branch='', hermes_branch='', command=<hermes.commands.init.base.HermesInitCommand object at 0x7082d28534a0>)
+1767959362.711329:          hermes.cli:     DEBUG | Loading settings...
+1767959362.711349:          hermes.cli:     DEBUG | Update settings from command line...
+1767959362.711363:          hermes.cli:      INFO | Run subcommand init
+1767959362.770589:         hermes.init:      INFO | Your version of HERMES (0.10.0.dev0) is up to date.
+1767959362.770750:         hermes.init:      INFO | Preparing HERMES initialization
+
+1767959362.783866:         hermes.init:      INFO | Your git project has multiple remotes. For which remote do you want to setup HERMES?
+1767959363.627731:         hermes.init:      INFO | You selected "origin (https://github.com/nheeb/zenodo-test)".
+
+1767959363.633616:         hermes.init:      INFO | Git project using GitHub detected.
+
+1767959363.633799:         hermes.init:      INFO | Starting to initialize HERMES in /home/n.heeb/Desktop/zenodo-test
+
+1767959363.633877:         hermes.init:      INFO | -- Step 1 of 8: Configure HERMES plugins --
+1767959364.008557:         hermes.init:      INFO | The following plugins are already builtin:
+1767959364.008723:         hermes.init:      INFO | [harvest] [1mCITATION.cff Harvester[0m (builtin)
+1767959364.008788:         hermes.init:      INFO | [harvest] [1mcodemeta.json Harvester[0m (builtin)
+1767959364.008853:         hermes.init:      INFO | [harvest] [1m'file_exists' Harvester[0m (builtin)
+1767959364.008895:         hermes.init:      INFO | [process] [1mMerge[0m (builtin)
+1767959364.008933:         hermes.init:      INFO | [curate] [1mCurate[0m (builtin)
+1767959364.008968:         hermes.init:      INFO | [deposit] [1mInvenio Deposit[0m (builtin)
+1767959364.009003:         hermes.init:      INFO | [deposit] [1mInvenio RDM Deposit[0m (builtin)
+1767959364.009038:         hermes.init:      INFO | [deposit] [1mRodare Deposit[0m (builtin)
+1767959364.009070:         hermes.init:      INFO | [postprocess] [1mInvenio Postprocess[0m (builtin)
+1767959364.009104:         hermes.init:      INFO | [postprocess] [1mInvenio RDM Postprocess[0m (builtin)
+1767959364.009141:         hermes.init:      INFO | The following plugins are available for installation:
+1767959364.009243:         hermes.init:      INFO | Do you want to add a plugin?
+1767959364.892239:         hermes.init:      INFO | You selected "No further plugins needed".
+
+1767959364.892487:         hermes.init:      INFO | -- Step 2 of 8: Configure deposition platform and setup method --
+1767959364.892570:         hermes.init:      INFO | Where do you want to publish the software?
+1767959365.754355:         hermes.init:      INFO | You selected "Zenodo Sandbox".
+
+1767959365.754526:         hermes.init:      INFO | Select an access right for your publication
+1767959366.283623:         hermes.init:      INFO | You selected "open".
+
+1767959366.283860:         hermes.init:      INFO | How do you want to connect Zenodo Sandbox with your GitHub CI?
+1767959367.092313:         hermes.init:      INFO | You selected "Automatically (using OAuth / Device Flow)".
+
+1767959367.092582:         hermes.init:      INFO | -- Step 3 of 8: Configure HERMES behaviour --
+1767959367.092681:         hermes.init:      INFO | When should the automated HERMES process start?
+1767959369.275122:         hermes.init:      INFO | You selected "When I push any tag".
+
+1767959369.275350:         hermes.init:      INFO | The HERMES pipeline will be activated when you push a tag.
+1767959370.627947:         hermes.init:      INFO | Y
+
+1767959370.628181:         hermes.init:      INFO | Which other folders / files of your root directory should be included in the Zenodo Sandbox upload?
+1767959372.076777:         hermes.init:      INFO | You selected "Only src/*".
+
+1767959372.077004:         hermes.init:      INFO | Your upload will consist of the following:
+1767959372.077077:         hermes.init:      INFO | 	Unzipped:
+1767959372.077137:         hermes.init:      INFO | 		README.md
+1767959372.077193:         hermes.init:      INFO | 	Zipped:
+1767959372.077250:         hermes.init:      INFO | 		src
+1767959373.205850:         hermes.init:      INFO | Y
+
+1767959373.206189:         hermes.init:      INFO | You can change the selected files later inside the CI file or by running 'hermes init' again.
+1767959373.206319:         hermes.init:      INFO | -- Step 4 of 8: Create hermes.toml file --
+1767959373.208221:         hermes.init:      INFO | `hermes.toml` was created.
+1767959373.208605:         hermes.init:      INFO | -- Step 5 of 8: Create CITATION.cff file --
+1767959373.208688:         hermes.init:      INFO | Your project already contains a `CITATION.cff` file. Nice!
+1767959373.208709:         hermes.init:      INFO | -- Step 6 of 8: Create git CI files --
+1767959373.209362:         hermes.init:      INFO | A new `.gitignore` file was created.
+1767959373.209553:         hermes.init:      INFO | Added `.hermes/` to the `.gitignore` file.
+1767959373.385302:         hermes.init:      INFO | GitHub CI: File was created at .github/workflows/hermes_github.yml
+1767959373.385371:         hermes.init:      INFO | -- Step 7 of 8: Connect with deposition platform --
+1767959373.385396:         hermes.init:      INFO | Doing OAuth with Zenodo is currently not available.
+1767959373.385440:         hermes.init:      INFO | Open this link (https://sandbox.zenodo.org/account/settings/applications/tokens/new/) and create an access token.
+1767959373.385461:         hermes.init:      INFO | It needs the scopes "deposit:actions" and "deposit:write".
+1767959403.701350:         hermes.init:      INFO | The token was validated by Zenodo Sandbox.
+1767959403.701574:         hermes.init:      INFO | -- Step 8 of 8: Connect with git hoster --
+1767959403.701660:         hermes.init:      INFO | Using Device-Flow to authorize with GitHub
+1767959403.887902:         hermes.init:      INFO | Open https://github.com/login/device and enter this code: 2E5A-0FEA
+1767959424.936115:         hermes.init:      INFO | OAuth at GitHub was successful.
+1767959425.455380:         hermes.init:      INFO | Secret 'ZENODO_SANDBOX_TOKEN' created/updated successfully.
+1767959425.725587:         hermes.init:      INFO | Project settings updated successfully.
+1767959425.727615:         hermes.init:      INFO | Cleaning unused files...
+1767959425.728040:         hermes.init:      INFO | 
+HERMES is now initialized. Add the changes to your git index and it is ready to be used.
 
