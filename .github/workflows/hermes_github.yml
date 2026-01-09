@@ -16,7 +16,7 @@ on:
   # See the events you can react to at https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows
   push:
     branches:
-      - main
+      - 
   # NOTE: Do not delete the trigger on closed pull requests, the HERMES workflow needs this.
   pull_request:
     types:
@@ -49,7 +49,7 @@ jobs:
         with:
           python-version: '3.10'
       - run: pip install hermes
-      - run: pip install hermes
+
       - run: hermes harvest
       - run: hermes process
       - run: hermes curate
@@ -94,12 +94,12 @@ jobs:
         with:
           python-version: '3.10'
       - run: pip install hermes
-      - run: pip install hermes
+
 
       # ADAPT
       # If you want to publish artifacts (e.g., a zipped snapshot of your repository),
       # you can prepare this here.
-      - run: git archive --format zip HEAD src > showcase.zip
+      - run: git archive --format zip HEAD src > artifact.zip
 
       # Run the HERMES deposition and postprocessing steps.
       # ADAPT
@@ -108,7 +108,7 @@ jobs:
       # 2. Adapt the files you want to deposit. In the example, showcase.zip and README.md are deposited alongside the metadata.
       # 3. Check if you want to run with '--initial', as this may potentially create a completely new record (collection),
       #    rather than a new version of the same collection!
-      - run: hermes deposit --initial -O invenio_rdm.auth_token ${{ secrets.ZENODO_SANDBOX }} --file showcase.zip --file README.md 
+      - run: hermes deposit --initial -O invenio_rdm.auth_token ${{ secrets.ZENODO_SANDBOX_TOKEN }} --file artifact.zip --file README.md 
 
       # ADAPT
       # Remove this command if you don't want to do any postprocessing
